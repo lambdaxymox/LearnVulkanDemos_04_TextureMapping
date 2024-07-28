@@ -80,7 +80,6 @@ add_subdirectory(external/glfw-3.4)
 add_subdirectory(external/glm-1.0.1)
 add_subdirectory(external/fmt-10.2.0)
 add_subdirectory(external/stb)
-add_subdirectory(external/tiny_obj_loader)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 
@@ -94,7 +93,6 @@ target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE glfw)
 target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE glm)
 target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE fmt)
 target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE stb)
-target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE tiny_obj_loader)
 add_dependencies(LearnVulkanDemos_04_TextureMapping GLSL_Shaders)
 add_dependencies(LearnVulkanDemos_04_TextureMapping HLSL_Shaders)
 
