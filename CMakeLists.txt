@@ -87,6 +87,7 @@ add_executable(LearnVulkanDemos_04_TextureMapping)
 target_sources(LearnVulkanDemos_04_TextureMapping PRIVATE
     src/main.cpp
     src/engine.cpp
+    src/engine_impl_fmt.cpp
 )
 target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE Vulkan::Vulkan)
 target_link_libraries(LearnVulkanDemos_04_TextureMapping PRIVATE glfw)
